@@ -17,4 +17,12 @@ module.exports = (storybookBaseConfig, configType) => ({
       CURRENT_VERSION: JSON.stringify(undefined),
     }),
   ],
+    devServer: {
+    contentBase: path.resolve(`${__dirname}/docs/public`),
+    hot: true,
+    open: true,
+    host: '0.0.0.0', // fixes docker port binding
+    public: '<hostname-of-your-docker-host>:8080'
+  },
+
 });
