@@ -27,5 +27,5 @@ jobs:
         name: cruise-automation/webviz/webwiz:latest
         registry: docker.pkg.github.com
         dockerfile: Dockerfile
-        username: <your-automation-username-here->
+        username: warpoe
         password: ${{ secrets.GITHUB_TOKEN }}
