@@ -22,7 +22,7 @@ jobs:
         #npm run docs (runs webserver)
       env:
         CI: true
-    - uses: elgohr/Publish-Docker-Github-Action@master
+    - uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         name: cruise-automation/webviz/webwiz:latest
         registry: docker.pkg.github.com
